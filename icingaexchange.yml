@@ -1,0 +1,18 @@
+name: 'check_service_restart'
+description: 'file:///README.md'
+url: 'https://github.com/arioch/check_service_restart'
+tags: 'service restart'
+vendor: 'Linux'
+target: 'Operating System'
+type: 'Plugin'
+license: 'Apache'
+releases:
+  -
+    name: 1.0.0
+    description: '1.0.0 Release'
+    files:
+      -
+        name: 'check_service_restart'
+        url: 'file:///check_service_restart'
+        description: 'First release'
+        checksum: '68a398ec012e602a7c2cf1582e06e9d8'
