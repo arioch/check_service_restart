@@ -13,6 +13,7 @@ define command{
 
 ## Icinga2
 
+```
 apply Service "check_service_restart" to Host {
   import "generic-service"
   display_name = "Service restart"
@@ -22,3 +23,4 @@ apply Service "check_service_restart" to Host {
   vars.by_ssh_command = "sudo /usr/lib64/nagios/plugins/check_service_restart"
   vars.by_ssh_logname = "root"
 }
+```
