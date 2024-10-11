@@ -20,7 +20,7 @@ if [ -f /etc/redhat-release ];
 then
   if [ -n "$(which needs-restarting)" ];
   then
-    services=$(needs-restarting | wc -l)
+    services=$(needs-restarting &> >(grep -viE 'Failed to read PID') | wc -l)
     case $services in
       [0]*)
         echo "OK - $services services need to be restarted"
